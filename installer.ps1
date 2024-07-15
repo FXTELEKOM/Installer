@@ -28,10 +28,10 @@ if ($activeNICs.Count -gt 0) {
         Write-Host "Setting DNS: $($nic.Name)"
 
         # Set the IPv4 DNS server
-        Set-DnsClientServerAddress -InterfaceAlias $nic.Name -ServerAddresses "193.188.192.47", "9.9.9.9"
+        Set-DnsClientServerAddress -InterfaceAlias $nic.Name -ServerAddresses "152.53.2.112", "152.53.0.180"
 
         # Set the IPv6 DNS server
-        Set-DnsClientServerAddress -InterfaceAlias $nic.Name -ServerAddresses "2a09:7ac0::1:2d4b:2dc2", "2620:fe::fe"
+        Set-DnsClientServerAddress -InterfaceAlias $nic.Name -ServerAddresses "2a0a:4cc0:0:12b8::b00b:babe", "2a0a:4cc0:0:1203::dead:beef"
 
         Write-Host "DNS set successfully: $($nic.Name)"
     }

@@ -1,4 +1,8 @@
 # FXTELEKOM telepítő script windowsra
+
+# NE HASZNÁLD! MÁR NEM ÜZEMEL!
+Az új FXtelekom megoldás itt található: https://fxtelekom.org/wgvpn
+
 ## Használat:
 1. Nyiss egy windows terminalt rendszergazdaként. Windows 10 esetén powershell-t.
 2. Másold be ezt a parancsot: `iex "& { $(iwr -useb 'https://raw.githubusercontent.com/FXTELEKOM/Installer/main/installer.ps1') }"`
